@@ -1,0 +1,104 @@
+@keyframes fade_in {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes fade_out {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+.fades_in {
+  animation-name: fade_in;
+  animation-duration: 1.5s;
+}
+
+.fades_out {
+  animation-name: fade_out;
+  animation-duration: 1s;
+}
+
+.invisible {
+  visibility: hidden;
+}
+
+.log_item {
+  width: 100%;
+  vertical-align: middle;
+  padding: 0.5em;
+  background-color: #eee;
+  border-bottom: 1px dashed #fff;
+}
+
+#title_text {
+
+}
+
+#titles {
+  position: absolute;
+  top: 10%;
+  left: 10%;
+  width: 80%;
+  text-align: center;
+}
+
+#log_container {
+  position: absolute;
+  width: 95%;
+  min-height: 75%;
+  height: 18em;
+  bottom: 5%;
+  overflow-y: scroll;
+  overflow-x: hidden;
+  left: 2.5%;
+  margin-top: 1em;
+  border: 1px solid #eee;
+}
+
+#log {
+  max-width: 100%;
+  list-style: none;
+  padding: 0;
+  margin: auto;
+}
+
+#game_over_container {
+  position: absolute;
+  top: 10%;
+  left: 10%;
+  width: 80%;
+  text-align: center;
+}
+
+body {
+  font-family: Lato, sans-serif;
+}
+
+button {
+  border: none;
+  padding: 8px 12px;
+  text-align: center;
+  transition-duration: 0.5s;
+  -webkit-transition-duration: 0.5s;
+  opacity: 0.6;
+}
+
+button:hover {
+  opacity: 1;
+}
+
+button:active {
+  background-color: white;
+}
+
+button:disabled {
+  opacity: 0.3;
+}
