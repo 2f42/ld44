@@ -1,0 +1,40 @@
+<html>
+  <head>
+    <title>Welcome to the Underworld&trade;</title>
+    <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <script src="game.js"></script>
+  </head>
+  <body>
+    <div id="titles">
+      <h1 id="title_text" class="fades_in">Welcome to the <i>Underworld&trade;</i></h1>
+      <button id="continue_button" type="button" onclick="next_step()">Click here to continue</button>
+      <button id="skip_button" type="button" onclick="set_up_game()">Click here if you have already seen the intro</button>
+    </div>
+    <div id="game" class="invisible">
+      <p>Money: <span id="moneybox"></span></p>
+      <p>Hours left: <span id="hoursbox"></span></p>
+      <button id="workbutton" type="button" onclick="work()">Work</button>
+      <button id="jobsearchbutton" type="button" onclick="job_search()">Job Search</button>
+      <button id="leisurebutton" type="button" onclick="leisure()">Leisure</button>
+      <button id="buskbutton" type="button" onclick="busk()">Busk</button>
+      <button id="crimebutton" type="button" onclick="crime()">Crime</button>
+      <button id="wanderbutton" type="button" onclick="wander()">Wander</button>
+      <button id="schoolbutton" type="button" onclick="school()">School</button>
+      <button id="waitbutton" type="button" onclick="waitforever()">Wait until it's over</button>
+      <div id="log_container">
+        <ul id="log">
+          <center style="opacity: 0.5;">- End of logs -</center>
+        </ul>
+      </div>
+    </div>
+    <div id="game_over_container" class="invisible">
+      <h1 id="out_of_time">It looks like you are out of time</h1>
+      <h3 id="money_line">You finished with $<span id="game_over_money"></span> to your name</h3>
+      <p id="final_text">
+      </p>
+      <button id="restartbutton" type="button" onclick="window.location.reload(false)">Restart</button>
+      <button id="rateonludumdare" type="button" onclick="window.location.href='https://ldjam.com/events/ludum-dare/44/$148368'">Rate this game on Ludum Dare</button>
+    </div>
+  </body>
+</html>
